@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 import useReviews from '../../hooks/useReviews'
 import SingleReview from '../SingleReview/SingleReview'
 import './Home.css'
@@ -7,11 +8,13 @@ import './Home.css'
 const Home = () => {
   const [reviews] = useReviews();
 
-  
-
   const homePageReviews = reviews.slice(0, 3);
 
-  
+  let navigate = useNavigate();
+
+  const handleAllReviewsBtn = () => {
+    navigate('/reviews');
+  }
 
   return (
     <main>
@@ -44,7 +47,7 @@ const Home = () => {
             )}
           </div>
 
-          <button className='reviews-btn mt-5' >See All Reviews</button>
+          <button className='reviews-btn mt-5' onClick={handleAllReviewsBtn}>See All Reviews</button>
         </Container>
       </section>
     </main>
