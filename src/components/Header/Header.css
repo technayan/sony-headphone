@@ -1,3 +1,7 @@
+.navbar-brand strong{
+    font-size: 25px;
+}
+
 .navbar-link {
     font-size: 18px;
     font-weight: bold;

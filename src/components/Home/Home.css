@@ -9,6 +9,10 @@
     color: #597D8F;
 }
 
+.hero-sub-title {
+    font-size: 20px;
+}
+
 .hero-btn {
     padding: 15px 30px;
     font-weight: bold;
