@@ -1,0 +1,13 @@
+.navbar-link {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #9a9a9a;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: #597D8F !important;
+    text-decoration: underline;
+}
