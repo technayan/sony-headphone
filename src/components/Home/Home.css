@@ -1,12 +1,27 @@
 .hero-text-area,
 .hero-img-area {
-    border: 1px solid orange;
     width: 50%;
 }
 
 .hero-text-area span {
     font-size: 90px;
     font-weight: bolder;
+    color: #597D8F;
+}
+
+.hero-btn {
+    padding: 15px 30px;
+    font-weight: bold;
+    color: #597D8F;
+    background: transparent;
+    border: 2px solid #597D8F;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+    background: #597d8f;
+    color: #fff;
 }
 
 .hero-img {
